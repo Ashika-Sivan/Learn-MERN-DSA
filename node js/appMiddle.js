@@ -70,15 +70,23 @@
 
 
 
-const express=require('express')
-const session=require('express-session')
-const app=express()
+// const express=require('express')
+// const session=require('express-session')
+// const app=express()
 
-app.use(express.json())
+// app.use(express.json())
 
-app.use(session({
-    secret:'my-secret-key',
-    resave:false,
-    saveUninitialized:false,
-    cookie:{secure:false}
-}))
+// app.use(session({
+//     secret:'my-secret-key',
+//     resave:false,
+//     saveUninitialized:false,
+//     cookie:{secure:false}
+// }))
+
+// app.use((req,res,next)=>{
+//     let err=new Error('something went wrong')
+//     next(err)
+// })
+// app.use((err,req,res,next)=>{
+//     res.status(500).send(`${err.message}`)
+// })
